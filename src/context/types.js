@@ -1,0 +1,6 @@
+export const SET_USERS = "SET_USERS";
+export const USER_VALIDATED = "USER_AUTHENTICATED";
+export const USER_INVALIDATED = "USER_INVALIDATED";
+export const SET_EMAIL = "SET_EMAIL";
+export const SET_PASSWORD = "SET_PASSWORD";
+export const LOGIN_SUCCEEDED = "LOGIN_SUCCEEDED";

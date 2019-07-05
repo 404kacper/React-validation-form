@@ -1,25 +1,19 @@
-import React, { Component } from "react";
+import React, {useContext} from "react";
 import logo from "../icons/react.svg";
 import Form from "./Form";
-// import PropTypes from "prop-types";
-// import {withRouter} from 'react-router';
+import AuthContext from '../context/authentiaction/authContext';
 
-export class Window extends Component {
-
-  passState = (userState) => {
-    this.props.compareUserState(userState);
-  }
-
-  render() {
+const Window = () => {
+  const authContext = useContext(AuthContext);
     
     return (
       <div style={WindowStyle}>
         <img src={logo} alt="" style={ImageStyle} />
-        <Form passState={this.passState}/>
+        <Form />
       </div>
     );
   }
-}
+
 
 
 const ImageStyle = {
@@ -47,5 +41,4 @@ const WindowStyle = {
   backgroundColor: "#fff"
 };
 
-// export default withRouter(Window);
 export default Window;
